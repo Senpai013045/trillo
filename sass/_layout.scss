@@ -1,0 +1,75 @@
+.container {
+  max-width: 120rem;
+  background-color: var(--cgl2);
+  margin: 8rem auto;
+  min-height: 50rem;
+  box-shadow: var(--bs1);
+  @media only screen and (max-width: $bp-largest) {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+}
+.header {
+  background-color: var(--cw);
+  border-bottom: 0.1rem solid var(--cgd2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  padding: 0.7rem 0;
+  @media only screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-between;
+  }
+}
+.content {
+  display: flex;
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+}
+.sidebar {
+  background-color: var(--cgd1);
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hotel-view {
+  flex: 1;
+  min-height: 60rem;
+}
+.description {
+  display: flex;
+  padding: 4.5rem;
+  font-size: 1.4rem;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+.details {
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  box-shadow: var(--bs1);
+  background-color: var(--cgl1);
+  padding: 3rem;
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3.5rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
+.user-reviews {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
